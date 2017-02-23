@@ -1,0 +1,176 @@
+/*** COLORS ***/
+/*
+Change div colors and border styles here
+For those unfamiliar with CSS:
+	'color' refers to font color
+	'background' refers to div background
+	'border' refers to borders (weight, line-type, color)
+
+Colors can be input as rgb - 'rgb(r,g,b)' - or hex - #123456
+*/
+body {
+}
+
+#wrapper {
+	color: auto;
+	background: #F5F5F3;
+}
+
+#header {
+	color: auto;
+	background: #022B3A;
+	border: 1px solid #A1A0A3;
+}
+
+#nav {
+	color: #F5F5F3;
+	background: auto;
+	margin-left: .2em;
+	margin-bottom: .4em;
+	/*border: 1px solid black;*/
+}
+
+.nav-element {
+	color: auto;
+	background: auto;
+	text-decoration: underline;
+	/*border: 1px solid black;*/
+}
+
+#main-body {
+	color: auto;
+	background: auto;
+}
+
+#content {
+	color: auto;
+	background: white;
+	/*border: 1px solid black;*/
+	/* if you remove borders, you will need to increase
+	the width of this by 2px per border removed
+	(up to 760px wide) */
+	width: 758px;
+}
+
+#sidebar {
+	color: auto;
+	background: #A1D6E2;
+}
+
+.side-title {
+	color: black;
+	background: auto;
+	margin-bottom: 2px;
+	margin-top: 10px;
+	margin-left: 1em;
+	/*border: 1px solid black;*/
+}
+
+.side-element {
+	color: black;
+	background: auto;
+	/*border: 1px solid black;*/
+}
+
+.first {
+	margin-top: 1em;
+}
+
+.last {
+	margin-bottom: 1em;
+}
+
+#footer {
+	color: black;
+	background: white;
+	/*border: 1px solid black;*/
+}
+
+/** POSITIONING **/
+/*
+	Don't worry about changing anything here!
+	This is all structural HMTL. You can play
+	around with it if you /want/, of course.
+*/
+body {
+	font-family: sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+#wrapper {
+	width: 960px;
+	margin: auto;
+}
+
+#header {
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+#header h1 {
+	margin-top: 1.1em;
+	margin-left: 1em;
+	color: #F5F5F3;
+}
+
+#nav {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+}
+
+.nav-element {
+	display: inline-block;
+	padding: .1em 1em;
+	margin: 0;
+	margin-left: -.25em;
+}
+
+#main-body {
+	width: 100%;
+	height: 400px;
+}
+
+#content {
+	height: 100%;
+	float: right;
+}
+
+#content p {
+	margin: 1.5em 2em;
+}
+
+#sidebar {
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+.side-title {}
+
+.side-element {
+	width: 75%;
+	float: right;
+}
+
+#footer {
+	width: 100%;
+	padding: .5em 0;
+	text-align: center;
+}
